@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>ROR1000 Homework 2 & 3</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a class="active" href="index.html">Homework 1</a>
+        <a href="homework.html">Homework 2</a>
+    </div>
+
+    <div class="content">
+        <h3>Question-1 : Since stamps require images, and they should be persisted, what is your strategy to save the
+            image? Are you going to convert it into a base64 String and save the whole image it in the database OR save
+            the image on the file system, and add the name to the database? Whatever is your answer, why do you
+            consider this the best way to proceed?</h3>
+        <hr />
+        <p><b>Answer : </b>I choose the second option to save the image on the file system, and add the name to the database.I think it will not be a good idea to convert it into a base64 String and save the whole image it in the database. Because it makes it so much harder to access the images directly if I need to, uses more space than storing the images in the file system and prevents from storing the images on a file server separate to the database server if ever I need to.</p>
+
+        <h3>Question-2 : Stamps have a group of attributes, so you will probably need a data structure to represent
+            stamps. In PHP, that structure most likely be an associative array or an object. Give it a though and
+            answer which structure are you going to use and why?</h3>
+        <hr />
+        <p><b>Answer : </b>I have used the associative array data structure to represent the stamps.I find it clear and much more easier to display all data from the databse with the array key. Also I think it is faster to use an associative array than using an object when working with data from the database.</p>
+        <h3>Question-3 : If you choose to treat your stamps as objects, how are you going to save the object in the
+            database? Are you planning to save each attribute to a different column manually or use an ORM system?
+            Explain your answers on detail.</h3>
+        <hr />
+        <p><b>Answer : </b>I didn't choose to treat my stamps as objects. I choose associative array data structure to save the data.</p>
+        <h3>Question-4 : When saving passwords on the database, plain text is not an option. What is your strategy to
+            store the user password? Are you going to encrypt or hash the password? No matter what your answer is,
+            explain why and what algorithm do you plan to use.</h3>
+        <hr />
+        <p><b>Answer : </b>I am going to hash the password because it can not be decrypted so that hackers can not hack the password.</p>
+    </div>
+
+</body>
+
+</html>
